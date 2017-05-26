@@ -1,0 +1,215 @@
+
+<style>
+	.header:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.header {
+  height: 30px;
+  background: #f2f2f2;
+}
+.header .header-left {
+  float: left;
+  width: 430px;
+  height: 30px;
+  margin-left: 72px;
+  background: url(images/home.png) no-repeat left;
+}
+.header .header-left li {
+  float: left;
+  padding-left: 18px;
+  height: 12px;
+  color: #737373;
+  width: 91px;
+}
+.header .header-left li a {
+  color: #737373;
+  font-size: 12px;
+  display: block;
+  padding: 8px 0px;
+  background: url(images/header-bg.jpg) no-repeat right center;
+}
+.header .header-left li a:hover {
+  color: #c69c6d;
+}
+.header .header-left .li1 {
+  width: 159px;
+  margin-top: 8px;
+  background: none;
+}
+.header .header-left .li1 span {
+  width: 17px;
+  height: 17px;
+  display: block;
+  background: url(images/share2.png) no-repeat -353px -345px;
+  float: left;
+}
+.header .header-right {
+  float: right;
+  width: 554px;
+}
+.header .header-right li {
+  float: left;
+  height: 12px;
+  padding: 8px 21px;
+  background: url(images/header-bg.jpg) no-repeat right 10px;
+}
+.header .header-right li a {
+  color: #737373;
+  font-size: 12px;
+}
+.header .header-right li a:hover {
+  color: #cc0000;
+}
+.header .header-right .zhuce {
+  width: 85px;
+  text-align: center;
+  padding: 8px 0px;
+  position: relative;
+}
+.header .header-right .zhuce a {
+  padding-left: 16px;
+}
+.header .header-right .zhuce span {
+  width: 18px;
+  height: 20px;
+  display: block;
+  background: url(images/youli.gif) no-repeat left center;
+  position: absolute;
+  left: 14px;
+  top: 3px;
+}
+.header .header-right .my {
+  position: relative;
+}
+.header .header-right .my span {
+  width: 12px;
+  height: 9px;
+  display: block;
+  background: url(images/share2.png) no-repeat -233px -299px;
+  float: right;
+  margin-top: 3px;
+  margin-left: 13px;
+}
+.header .header-right .phone {
+  background: none;
+  position: relative;
+  width: 99px;
+}
+.header .header-right .phone span {
+  width: 33px;
+  height: 19px;
+  display: block;
+  background: url(images/share2.png) no-repeat -285px -376px;
+  float: right;
+}
+.header .header-right .phone .phone-js {
+  width: 130px;
+  height: 160px;
+  display: block;
+  position: absolute;
+  background: white;
+  display: none;
+  left: 5px;
+  top: 28px;
+  z-index: 999;
+}
+.header .header-right .phone .phone-js i {
+  text-align: center;
+  display: block;
+  line-height: 4px;
+  color: #666666;
+}
+.header .header-right .phone .phone-js i b {
+  font-weight: 16px;
+  color: red;
+}
+.header .header-right .phone img {
+  width: 107px;
+  height: 108px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.header #header-js {
+  width: 128px;
+  height: 155px;
+  position: absolute;
+  left: 0px;
+  top: 28px;
+  display: none;
+  background: #ffffff;
+  border: 1px solid #f1eeee;
+  border-top: none;
+}
+.header #header-js p {
+  text-align: center;
+  line-height: 30px;
+}
+</style>
+
+<ul class="header-left">
+			<li><a href="##">第五大道首页</a></li>
+			<li class="li1"><span></span>贵宾专线:400-660-5610</li>
+</ul>
+	
+		<ul class="header-right">
+			<li><a href="landing.html">登录</a></li>
+			<li class="zhuce"><a href="register.html"><span></span>注册</a></li>
+			<li class="my"><a href="#">我的第五大道<span></span></a>
+	
+				<div id="header-js">
+						<p><a href="">我的订单</a></p>
+						<p><a href="">我的收藏</a></p>
+						<p><a href="">已购商品</a></p>
+						<p><a href="">我的礼券</a></p>
+						<p><a href="">我的积分</a></p>
+				</div>
+	
+			</li>
+			<li><a href="##">帮助中心</a></li>
+			<li class="phone"><a href="#">手机版下载<span></span></a>
+				<p class="phone-js"><a href="##" title=""><img src="images/qr.jpg" alt=""></a>
+					<i>扫描下载APP</i><br>
+					<i>立即<b>赠送50元</b></i>
+				</p>
+			</li>
+		</ul>
+
+<script>
+	//登录 注册部分
+	var $down=$(".header .header-right .my");
+	$down.hover(function(){
+		
+		$(this).find("span").eq(0).css("background","url(images/share2.png) no-repeat -243px -465px");
+		$(this).css("background","  url(images/share2.png) no-repeat -243px -465px");
+		$(this).find("#header-js").eq(0).show();
+	},function(){
+		$(this).find("span").eq(0).css("background","url(images/share2.png) no-repeat -233px -299px");
+		$(this).css("background","none");
+		$(this).find("#header-js").eq(0).hide();
+	});
+
+	var $downPhone=$(".header .header-right .phone");
+		$downPhone.hover(function(){
+			$(this).find("span").eq(0).css("background","url(images/share2.png) no-repeat -287px -412px");
+			$(this).find(".phone-js").eq(0).show();
+		},function(){
+			$(this).find("span").eq(0).css("background","url(images/share2.png) no-repeat -285px -376px");
+			$(this).find(".phone-js").eq(0).hide();
+		});
+
+	var $sP=$("dl");
+	$sP.hover(function(){
+		$("dl > .shopCar-js").stop().slideDown("fast");
+		//$("dl > dt").css("border-bottom","10px");
+	},function(){
+		$("dl > .shopCar-js").stop().slideUp("fast");
+
+	});
+
+
+</script>

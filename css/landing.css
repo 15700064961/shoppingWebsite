@@ -1,0 +1,371 @@
+html,
+body,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+fieldset,
+legend,
+img,
+i,
+em,
+b,
+strong,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+b,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
+}
+i,
+em {
+  font-style: normal;
+}
+img {
+  border: none;
+}
+body {
+  font: 12px "微软雅黑";
+}
+/*-------------------------------register-logo----------------------------------------------*/
+.logo:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.logo {
+  position: relative;
+}
+.logo .left-logo {
+  width: 503px;
+  height: 110px;
+  float: left;
+  margin-left: 72px;
+}
+.logo .left-logo .logo1 {
+  width: 250px;
+  height: 110px;
+  float: left;
+}
+.logo .left-logo .landingT {
+  margin-top: 40px;
+  font-size: 18px;
+  color: #cccccc;
+  display: block;
+}
+.logo dt {
+  width: 140px;
+  height: 32px;
+  border: 1px solid #cccccc;
+  margin-left: 143px;
+  text-align: center;
+  line-height: 32px;
+  color: #8b8b8b;
+  font-size: 12px;
+}
+.logo dt span {
+  color: red;
+}
+.logo dt p {
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-top: 3px;
+  margin-left: 10px;
+  background: url(../images/share2.png) no-repeat -388px -339px;
+}
+.logo dt img {
+  width: 8px;
+  height: 11px;
+  margin-left: 10px;
+}
+/*-------------------------------landing----------------------------------------------*/
+.landing:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.landing {
+  background: url(../images/landing.jpg) no-repeat;
+  position: relative;
+}
+.landing .nohave {
+  width: 250px;
+  height: 20px;
+  position: absolute;
+  display: block;
+  display: none;
+  left: 100px;
+  top: 112px;
+  color: red;
+}
+.landing .nohave1 {
+  width: 250px;
+  height: 20px;
+  position: absolute;
+  display: block;
+  left: 100px;
+  top: 174px;
+  display: none;
+  color: red;
+}
+.landing .denglu {
+  width: 455px;
+  height: 507px;
+  background: #fff;
+  position: absolute;
+  left: 725px;
+  top: 43px;
+}
+.landing .denglu .phone-denglu {
+  width: 330px;
+  height: 30px;
+  border-bottom: 1px solid #cccccc;
+  margin-left: 50px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.landing .denglu .phone-denglu span {
+  width: 112px;
+  height: 28px;
+  display: block;
+  font-size: 15px;
+  color: #949292;
+}
+.landing .denglu .landingWindow {
+  margin-left: 97px;
+}
+.landing .denglu .landingWindow input {
+  margin-bottom: 29px;
+  width: 250px;
+  height: 31px;
+  border: none;
+  text-align: center;
+}
+.landing .denglu .landingWindow .name-landing {
+  border: 1px solid #cccccc;
+  background: url(../images/inputuser.jpg) no-repeat left;
+}
+.landing .denglu .landingWindow .pw-landing {
+  border: 1px solid #cccccc;
+  background: url(../images/inputpw.jpg) no-repeat left;
+}
+.landing .denglu .landingWindow .remember {
+  width: 12px;
+  height: 12px;
+  margin-bottom: 38px;
+}
+.landing .denglu .landingWindow .norem a {
+  color: red;
+  text-decoration: underline;
+  margin-left: 52px;
+}
+.landing .denglu .landingWindow .in {
+  width: 252px;
+  height: 31px;
+  background: red;
+  color: #fff;
+}
+.landing .denglu .no-account {
+  width: 303px;
+  height: 39px;
+  border-bottom: 1px solid #cccccc;
+  text-align: right;
+  display: block;
+  margin-left: 73px;
+}
+.landing .denglu .no-account a {
+  color: red;
+  text-decoration: underline;
+}
+.landing .denglu .qq {
+  width: 257px;
+  height: 50px;
+  margin-top: 25px;
+  margin-left: 95px;
+}
+.landing .denglu .qq p {
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+/*-------------------------------customerService----------------------------------------------*/
+#customerService:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+#customerService {
+  margin: 0 auto;
+  margin-top: 5px;
+  border-top: 1px solid #cccccc;
+}
+#customerService .customerServiceList {
+  width: 1210px;
+  height: 115px;
+  margin: 0 auto;
+  border-bottom: 1px solid #cccccc;
+}
+#customerService li {
+  float: left;
+  height: 115px;
+  width: 241px;
+  position: relative;
+}
+#customerService li img {
+  margin-top: 24px;
+}
+#customerService li span {
+  width: 134px;
+  display: block;
+  height: 44px;
+  position: absolute;
+  left: 72px;
+  top: 41px;
+}
+#customerService li p {
+  padding-bottom: 10px;
+}
+#customerService li .servicepic {
+  color: #595946;
+}
+/*-------------------------------footer--------------------------------------------*/
+#footer:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+#footer {
+  background: url(../images/footerbg.jpg) no-repeat;
+}
+#footer .footer-top {
+  width: 1209px;
+  height: 400px;
+  margin: 0 auto;
+  padding-left: 17px;
+}
+#footer .footer-top ul {
+  float: left;
+  width: 103px;
+  height: 164px;
+  margin-top: 24px;
+}
+#footer .footer-top ul li {
+  margin-bottom: 12px;
+}
+#footer .footer-top ul a {
+  color: #463939;
+}
+#footer .footer-top ul a:hover {
+  text-decoration: underline;
+}
+#footer .footer-top .footer-title {
+  margin-bottom: 27px;
+}
+#footer .footer-top .erweima {
+  width: 273px;
+  height: 280px;
+  margin-left: 864px;
+}
+#footer .footer-top .erweima ul {
+  float: left;
+  margin-right: 27px;
+}
+#footer .footer-top .erweima ul li {
+  color: #000000;
+  margin-bottom: 12px;
+}
+#footer .footer-top .erweima ul span {
+  background: url(../images/erweima.jpg) no-repeat;
+  width: 82px;
+  height: 80px;
+  display: block;
+}
+#footer .footer-bottom {
+  width: 814px;
+  height: 197px;
+  margin: 0 auto;
+  position: relative;
+}
+#footer .footer-bottom ul {
+  margin-left: 204px;
+}
+#footer .footer-bottom li {
+  margin-top: 24px;
+  float: left;
+  margin-right: 12px;
+}
+#footer .footer-bottom li a {
+  color: #fff;
+}
+#footer .footer-bottom li a span {
+  color: #fff;
+}
+#footer .footer-bottom li a:hover {
+  text-decoration: underline;
+}
+#footer .footer-bottom ol {
+  width: 809px;
+  height: 131px;
+  position: absolute;
+  left: 0px;
+  top: 72px;
+}
+#footer .footer-bottom ol li {
+  margin-left: 13px;
+}
+#footer .footer-bottom ol .time {
+  margin-left: 60px;
+  color: #fff;
+  height: 12px;
+}
+#footer .footer-bottom .picfooter {
+  width: 447px;
+  height: 45px;
+  position: absolute;
+  left: -68px;
+  top: 132px;
+}
+#footer .footer-bottom .picfooter li {
+  float: left;
+  width: 98px;
+  height: 45px;
+}
